@@ -2033,7 +2033,7 @@ if (!isOwner) return reply('khusus owner')
 if (args.length < 1) return reply(`Masukkan isi pesannya`)
 const bc = store.chats.all()
 for (let i of bc) {
-sock.sendMessage(i.id, { text: `*「 BROADCAST 」*\n\n${q}\n\n⫹⫺ 𝗗𝗮𝘁𝗲 : ${waktuAriel}` })
+sock.sendMessage(i.id, { text: `*「 BROADCAST 」*\n\n*PESAN* : ${q}\n\n⫹⫺ 𝗗𝗮𝘁𝗲 : ${waktuAriel}` })
 }
 break
 case 'couple': {
@@ -3923,16 +3923,21 @@ break
       image: { url: anu.thumbnail },
                     caption: `「 *YOUTUBE PLAY* 」
                     
-⭔ Title : ${anu.title}
-⭔ Ext : Search
-⭔ ID : ${anu.videoId}
-⭔ Duration : ${anu.timestamp}
-⭔ Viewers : ${anu.views}
-⭔ Upload At : ${anu.ago}
-⭔ Author : ${anu.author.name}
-⭔ Channel : ${anu.author.url}
-⭔ Description : ${anu.description}
-⭔ Url : ${anu.url}`,
+📷 Judul : *${anu.title}*
+
+⌚ Durasi : *${anu.timestamp}*
+
+👥 Penonton : *${anu.views}*
+
+📅 Upload : *${anu.ago}*
+
+👤 Pemilik : *${anu.author.name}*
+
+👋 Channel : *${anu.author.url}*
+
+📝 Deskripsi : *${anu.description}*
+
+🔗 Url : ${anu.url}`,
       footer: Options.info.botName,
       buttons: buttooooons,
       headerType: 4
