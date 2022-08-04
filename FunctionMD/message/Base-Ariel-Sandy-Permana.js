@@ -3918,25 +3918,23 @@ break
        buttonText: {
         displayText: `► Video`
       }, type: 1}
+      {
+       buttonId: `#arielplay ${q}`, 
+       buttonText: {
+        displayText: `🔎 CARI LAGI`
+      }, type: 1}
     ]
     let buttooooonMessage = {
       image: { url: anu.thumbnail },
                     caption: `「 *YOUTUBE PLAY* 」
                     
 📷 Judul : *${anu.title}*
-
 ⌚ Durasi : *${anu.timestamp}*
-
 👥 Penonton : *${anu.views}*
-
 📅 Upload : *${anu.ago}*
-
 👤 Pemilik : *${anu.author.name}*
-
 👋 Channel : *${anu.author.url}*
-
 📝 Deskripsi : *${anu.description}*
-
 🔗 Url : ${anu.url}`,
       footer: Options.info.botName,
       buttons: buttooooons,
