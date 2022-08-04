@@ -3917,12 +3917,12 @@ break
        buttonId: `#ytmp4 ${anu.url}`, 
        buttonText: {
         displayText: `► Video`
-      }, type: 1}
+      }, type: 1},
       {
        buttonId: `#arielplay ${q}`, 
        buttonText: {
         displayText: `🔎 CARI LAGI`
-      }, type: 1}
+      }, type: 2}
     ]
     let buttooooonMessage = {
       image: { url: anu.thumbnail },
