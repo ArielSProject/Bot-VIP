@@ -3919,10 +3919,20 @@ break
         displayText: `► Video`
       }, type: 1},
       {
-       buttonId: `#arielplay ${q}`, 
-       buttonText: {
+       url: `#arielplay ${q}`, 
+       urlButton: {
         displayText: `🔎 CARI LAGI`
-      }, type: 2}
+      }, type: 1},
+      {
+       buttonId: `${Options.info.gcwa}`, 
+       buttonText: {
+        displayText: `Group WhatsApp`
+      }, type: 2},
+      {
+       buttonId: `${Options.info.youtubeLu}`, 
+       buttonText: {
+        displayText: `YouTube Owner`
+      }, type: 3}
     ]
     let buttooooonMessage = {
       image: { url: anu.thumbnail },
